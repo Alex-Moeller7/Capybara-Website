@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+    body{
+        background: url('beach-bg.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: rgba(223,180,137,255);
+        font-family: "Open Sans", sans-serif;
+        margin: 0;
+    }
+
+    .container{
+        width: 100vw;
+        height: 100vh;
+        overflow-y: visible;
+        overflow-x: hidden;
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 400px 1fr 1fr;
+    }
+
+    .container div {
+        padding: 10px;
+    }
+
+    .top{
+        grid-column-start: 1;
+        grid-column-end: 3;
+        color: white;
+    }
+
+    .header{
+        text-align: center;
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 50px;
+        width: auto;
+    }
+
+    .mainWeather {
+        margin: auto;
+        text-align: center;
+        width: 50%;
+    }
+
+    .sideWeather{
+        text-align: center;
+        color: white;
+        background: rgba(24,24,27,0.8);
+        border-top: 2px solid white;
+        font-size: larger;
+        display: grid;
+        height: 100%;
+        min-height: 400px;
+        
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .sayings{
+        text-align: center;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    .sideImg{
+        width: 99%;
+        background: rgba(24,24,27,0.8);
+        border-top: 2px solid white;
+        height: 100%;
+        min-height: 400px;
+    }
+
+    #city{
+        border-radius: 4pt;
+        height: 15pt;
+        padding-left: 5px;
+        vertical-align: middle;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 14px;
+    }
+
+    #citySubmit {
+        background-color: rgba(24, 24, 27, 0.8);
+        color: white;
+        border-radius: 4pt;
+        padding-left: 8pt;
+        padding-right: 8pt;
+        width: 90px;
+        height: 24pt;
+        font-size: 14px;
+    }

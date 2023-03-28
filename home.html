@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Capybara Weather</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="top">
+
+            <div class="header">
+                <h1><span id="cityname">Capybara</span> Weather</h1>
+
+                <h3>Please enter a city:</h3>
+
+                <input type="text" name="city" id="city" placeholder="Enter city..." >
+                <input type="button" id="citySubmit" value="Submit">
+    
+            </div>
+
+             <div class ="mainWeather">
+                
+                <p style="font-size: 45px; line-height: .6; margin: auto; padding: 10px;">
+                <span id="temp">0.00</span>℉ <br>
+                <span style="font-size: 23px;">Feels like </span><span style="font-size: 23px;" id="feelsLike">0.00</span><span style="font-size: 23px;">℉</span> <br>
+                <span style="font-size: 23px; display: inline-block;" id="sky"></p>
+                </div>
+        </div>
+        <div class ="sideWeather">
+
+            <div class="sideCol">
+                <p>Wind Speed: <span id="wind">0.00</span>mph <span id="dir">N</span></p>
+                <p>Humidity: <span id="humidity">0.00</span>%</p>
+                <p>Visibility: <span id="visibility">10</span> km</p>
+            </div>
+            <div class="sideCol">
+                <p>Pressure: <span id="pressure">30</span> inHg</p>
+                <p>Sunrise: <span id="sunrise">00:00 AM</span></p>
+                <p>Sunset: <span id="sunset">00:00 PM</span></p>
+            </div>
+
+            <div class="sayings">
+                <p>Alberte is feeling: <span id="feeling"></span></p>
+                <p>Alberte says to wear: <span id="wear"></span></p>
+                <p>Alberte says: <span id="whatToSay"></span></p>
+            </div>
+
+        </div>
+        <div class="sideImg">
+        
+            <p style="text-align: center; vertical-align: top; padding: 0%;"><img id="capybaraImg" style="width: 500px; height: auto; max-height: 400px;" src="Capybara.jpg"></p>
+
+        </div>
+    </div>
+
+    <script src="moment.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
